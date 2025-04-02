@@ -1,0 +1,234 @@
+class BondBasicInfo:
+    __table_name__ = 'DS_BOND_BASIC_INFO'
+    ID = 'ID'
+    SYMBOL = 'SYMBOL'
+    SIM_PV = 'SIM_PV'
+    BOND_NAME = 'BOND_NAME'
+    BOND_TYPE = 'BOND_TYPE'
+    MATURITY_YEAR = 'MATURITY_YEAR'
+    CURRENCY = 'CURRENCY'
+    PAR_VALUE = 'PAR_VALUE'
+    ISSUER_PRICE = 'ISSUER_PRICE'
+    COUPON_RATE = 'COUPON_RATE'
+    START_DATE = 'START_DATE'
+    END_DATE = 'END_DATE'
+    CALCULATION_MODE = 'CALCULATION_MODE'
+    PAYMENT_MODE = 'PAYMENT_MODE'
+    ISSUER_NAME = 'ISSUER_NAME'
+    IS_OPTION = 'IS_OPTION'
+    ISSUER_RATING = 'ISSUER_RATING'
+    ENTRY_TIME = 'ENTRY_TIME'
+    IS_GUARANTEE = 'IS_GUARANTEE'
+
+
+class TradeInfo:
+    __table_name__ = 'DS_TRADE_INFO'
+    ID = 'ID'
+    ENTITY_ID = 'ENTITY_ID'
+    TRADE_ID = 'TRADE_ID'
+    SYMBOL = 'SYMBOL'
+    TRADE_CURRENCY = 'TRADE_CURRENCY'
+    PRODUCT = 'PRODUCT'
+    IS_OPTIONAL = 'IS_OPTIONAL'
+    NOTIONAL = 'NOTIONAL'
+    LONG_SHORT = 'LONG_SHORT'
+    SIM_PV = 'SIM_PV'
+    RATING = 'RATING'
+    COUNTER_PARTY_TYPE = 'COUNTER_PARTY_TYPE'
+    PARTITION_KEY = 'PARTITION_KEY'
+    IS_DOMESTIC = 'IS_DOMESTIC'
+
+
+class FxForwardBasicInfo:
+    __table_name__ = 'DS_FX_FORWARD_BASIC_INFO'
+    ID = 'ID'
+    TRADE_ID = 'TRADE_ID'
+    BUY_PV = 'BUY_PV'
+    BUY_CURRENCY = 'BUY_CURRENCY'
+    PAY_PV = 'PAY_PV'
+    PAY_CURRENCY = 'PAY_CURRENCY'
+    MATURITY_DATE = 'MATURITY_DATE'
+    START_DATE = 'START_DATE'
+    COUNTER_PARTY = 'COUNTER_PARTY'
+    BUY_SELL = 'BUY_SELL'
+
+
+class FxOptionBasicInfo:
+    __table_name__ = 'DS_FX_OPTION_BASIC_INFO'
+    ID = 'ID'
+    TRADE_ID = 'TRADE_ID'
+    BUY_SELL = 'BUY_SELL'
+    MATURITY_DATE = 'MATURITY_DATE'
+    OPTION_TYPE = 'OPTION_TYPE'
+    STRIKE_PRICE = 'STRIKE_PRICE'
+    UNDERLYING_AMOUNT = 'UNDERLYING_AMOUNT'
+    UNDERLYING_CURRENCY = 'UNDERLYING_CURRENCY'
+    UNDERLYING_REF = 'UNDERLYING_REF'
+    DELTA = 'DELTA'
+    GAMMA = 'GAMMA'
+    VEGA = 'VEGA'
+    VOL = 'VOL'
+
+
+class FxSpotBasicInfo:
+    __table_name__ = 'DS_FX_SPOT_BASIC_INFO'
+    ID = 'ID'
+    TRADE_ID = 'TRADE_ID'
+    CURRENCY = 'CURRENCY'
+    REPORT_DATE = 'REPORT_DATE'
+    MARKET_VALUE = 'MARKET_VALUE'
+
+
+class CommodityForwardBasicInfo:
+    __table_name__ = 'DS_COMMODITY_FORWARD_BASIC_INFO'
+    ID = 'ID'
+    TRADE_ID = 'TRADE_ID'
+    BUY_SELL = 'BUY_SELL'
+    COMMODITY = 'COMMODITY'
+    CURRENCY = 'CURRENCY'
+    FWD_PRICE = 'FWD_PRICE'
+    MATURITY_DATE = 'MATURITY_DATE'
+    UNITS = 'UNITS'
+    TAGS = 'TAGS'
+
+
+class CommoditySpotBasicInfo:
+    __table_name__ = 'DS_COMMODITY_SPOT_BASIC_INFO'
+    ID = 'ID'
+    COMMODITY = 'COMMODITY'
+    CURRENCY = 'CURRENCY'
+    UNITS = 'UNITS'
+    TAGS = 'TAGS'
+
+
+class InterestRate:
+    __table_name__ = 'DS_INTEREST_RATE'
+    ID = 'ID'
+    SHOW_DATE = 'SHOW_DATE'
+    TENOR = 'TENOR'
+    VALUE = 'VALUE'
+    TYPE = 'TYPE'
+    INFO = 'INFO'
+    CURRENCY = 'CURRENCY'
+
+
+class SwapBasicInfo:
+    __table_name__ = 'DS_SWAP_BASIC_INFO'
+    ID = 'ID'
+    TRADE_ID = 'TRADE_ID'
+    SWAP_TYPE = 'SWAP_TYPE'
+    EFFECTIVE_DATE = 'EFFECTIVE_DATE'
+    MATURITY_DATE = 'MATURITY_DATE'
+    PAY_LEG_TYPE = 'PAY_LEG_TYPE'
+    PAY_CURRENCY = 'PAY_CURRENCY'
+    PAY_RATE = 'PAY_RATE'
+    PAY_PV = 'PAY_PV'
+    PAY_FREQUENCY = 'PAY_FREQUENCY'
+    RECEIVE_PV = 'RECEIVE_PV'
+    RECEIVE_LEG_TYPE = 'RECEIVE_LEG_TYPE'
+    RECEIVE_CURRENCY = 'RECEIVE_CURRENCY'
+    RECEIVE_FREQUENCY = 'RECEIVE_FREQUENCY'
+    RECEIVE_RATE = 'RECEIVE_RATE'
+
+
+class IrReportDetail:
+    __table_name__ = 'DS_IR_REPORT_DETAIL'
+
+
+class IrReportSummary:
+    __table_name__ = 'DS_IR_REPORT_SUMMARY'
+
+
+class IrReportSpecificSummary:
+    __table_name__ = 'DS_IR_REPORT_SPECIFIC_SUMMARY'
+
+
+class IssuerSectorInfo:
+    __table_name__ = 'DS_ISSUER_SECTOR_INFO'
+    ID = 'ID'
+    ISSUER_NAME = 'ISSUER_NAME'
+    CLASS_NAME = 'CLASS_NAME'
+    SECTORS = 'SECTORS'
+
+
+class BondMapRisk:
+    __table_name__ = 'DS_BOND_MAP_RISK'
+    ID = 'ID'
+    BOND_TYPE = 'BOND_TYPE'
+    RISK_TYPE = 'RISK_TYPE'
+
+
+class CommodityReportDetail:
+    __table_name__ = 'DS_COMMODITY_REPORT_DETAIL'
+
+
+class CommodityReportSummary:
+    __table_name__ = 'DS_COMMODITY_REPORT_SUMMARY'
+
+
+class OptionDetail:
+    __table_name__ = 'DS_OPTION_DETAIL'
+
+
+class OptionSummary:
+
+    __table_name__ = 'DS_OPTION_SUMMARY'
+
+
+class FxReportSummary:
+    __table_name__ = 'DS_FX_REPORT_SUMMARY'
+
+
+class CommodityPrice:
+    __table_name__ = 'DS_COMMODITY_PRICE'
+    ID = 'ID'
+    REPORT_DATE = 'REPORT_DATE'
+    SYMBOL = 'SYMBOL'
+    CURRENCY = 'CURRENCY'
+    TYPE = 'TYPE'
+    VALUE = 'VALUE'
+
+
+class ForeignExchange:
+    __table_name__ = 'DS_FOREIGN_EXCHANGE'
+    ID = 'ID'
+    PARTITION_KEY = 'PARTITION_KEY'
+    SOURCE = 'SOURCE'
+    TARGET = 'TARGET'
+    VALUE = 'VALUE'
+
+
+class FxSwapBasicInfo:
+    __table_name__ = 'DS_FX_SWAP_BASIC_INFO'
+    ID = 'ID'
+    TRADE_ID = 'TRADE_ID'
+    EFFECTIVE_DATE = 'EFFECTIVE_DATE'
+    PAY_DATE = 'PAY_DATE'
+    PURCHASE_CCY = 'PURCHASE_CCY'
+    SALE_CCY = 'SALE_CCY'
+    PARTITION_KEY = 'PARTITION_KEY'
+    PURCHASE_PV = 'PURCHASE_PV'
+    SALE_PV = 'SALE_PV'
+    PURCHASE_FAR_PV = 'PURCHASE_FAR_PV'
+    SALE_FAR_PV = 'SALE_FAR_PV'
+    BUY_SELL = "BUY_SELL"
+    FAR_PURCHASE_CCY = 'FAR_PURCHASE_CCY'
+    FAR_SALE_CCY = 'FAR_SALE_CCY'
+
+
+class CommoditySwapBasicInfo:
+    __table_name__ = 'DS_COMMODITY_SWAP_BASIC_INFO'
+    ID = 'ID'
+    TRADE_ID = 'TRADE_ID'
+    EFFECTIVE_DATE = 'EFFECTIVE_DATE'
+    PAY_DATE = 'PAY_DATE'
+    PURCHASE_COMMODITY = 'PURCHASE_COMMODITY'
+    SALE_COMMODITY = 'SALE_COMMODITY'
+    PARTITION_KEY = 'PARTITION_KEY'
+    PURCHASE_PV = 'PURCHASE_PV'
+    SALE_PV = 'SALE_PV'
+    PURCHASE_FAR_PV = 'PURCHASE_FAR_PV'
+    SALE_FAR_PV = 'SALE_FAR_PV'
+    BUY_SELL = "BUY_SELL"
+    FAR_PURCHASE_COMMODITY = 'FAR_PURCHASE_COMMODITY'
+    FAR_SALE_COMMODITY = 'FAR_SALE_COMMODITY'
